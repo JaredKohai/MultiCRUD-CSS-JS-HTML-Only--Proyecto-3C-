@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    
+    <!-- Encabezado con logotipo y barra de navegación -->
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo de la página">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/myProduct.html">My Products</a></li>
+              <li><a href="../html/cart.html">Comments</a></li>
+              <li><a href="../html/employee.html">Employees</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título y botón para crear usuarios -->
+        <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight"><h2>Empleados</h2></div>
+            <div class="p-2 bd-highlight">
+                <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Crear</button>
+            </div>
+        </div>
+        
+        <!-- Tabla que muestra la lista de usuarios -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <!-- Encabezados de la tabla -->
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Correo Electronico</th>
+                        <th scope="col">Tipo de Usuario</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="mytable">
+                    <!-- Filas de la tabla, se mostrará "Cargando..." mientras se carga la información -->
+                    <tr>
+                        <th scope="row" colspan="7">Cargando...</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Scripts de JavaScript -->
+    <script src="../js/employee.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
